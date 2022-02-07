@@ -4,4 +4,7 @@ from django.shortcuts import render
 
 
 def home(request):
-    return render(request, 'home.html', {})
+    name = "John"
+    return render(request, 'home.html', {
+        "name": name
+    })
